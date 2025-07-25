@@ -21,4 +21,7 @@ La solución incluye un flujo que consulta datos periódicamente, extrae los dos
 ## Link al video
 [Video del Proyecto final](https://drive.google.com/file/d/1cH_5uCesTQ_GKTydgx-AyYE0G3udUSij)
 
-<!-- Buen proyecto, en lo personal me entretuvo hacerlo y fue de gran ayuda para entender como puede ser un proyecto real de sete estilo -->
+# Autor: Tomás Mertian
+
+### Opinion del proyecto:
+  Buen proyecto, en lo personal me entretuvo hacerlo y fue de gran ayuda para entender como puede ser un proyecto real de este estilo
