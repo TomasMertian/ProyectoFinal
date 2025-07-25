@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  node-red:
+    container_name: ProyectoFinalAYS
+    image: nodered/node-red
+    ports:
+      - "1880:1880"
+    environment:
+      NODE_VERSION: "20.19.0"
+      YARN_VERSION: "1.22.22"
+      NODE_RED_VERSION: "v4.0.9"
+      NODE_PATH: "/usr/src/node-red/node_modules:/data/node_modules"
+      FLOWS: "flows.json"
+    volumes:
+      - node_red_data:/data
+    entrypoint: ["./entrypoint.sh"]
+    user: "node-red"
+    working_dir: /usr/src/node-red
+    stdin_open: true
+    tty: true
+    networks:
+      - bridge
+
+volumes:
+  node_red_data:
+
+networks:
+  bridge:
+    external: true
